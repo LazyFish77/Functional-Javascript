@@ -5,5 +5,6 @@ let repeat = (operation , num) => {
 }
 
 let exampleFunction = () => true;
+
 repeat(exampleFunction, 5);
 module.exports = repeat;
