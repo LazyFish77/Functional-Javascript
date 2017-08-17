@@ -4,14 +4,15 @@ function duckCount(...hasQuackValue){
     console.log(hasQuackValue)
     let args = [...arguments];
     let duckArray = args.filter(arg => arg.hasOwnProperty("quack"));
-    // console.log(duckArray.length);
-
-    // arguments.filter(arg => arg.hasOwnProperty("quack"));
+    return duckArray();
 } 
+
 let duck = {
     quack: () => console.log("quack")
 }
+
 let notDuck = {
     bark:() => console.log("bark")
 }
+
 duckCount(duck, notDuck);
