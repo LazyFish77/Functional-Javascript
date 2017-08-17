@@ -6,12 +6,8 @@
 //       }
 //       return result
 //     }
-let doubleAll = (numbers)  =>{
-    let result = [];
-    numbers.map(value => {
-        result.push(value);
-    });
-    return result;
+let doubleAll(arr) => {
+    arr.map(number => number = number*2);
 };
 let nums = [1,2,3,4,5,6,7,8,9,2,2,4,5]; 
 doubleAll(nums);
